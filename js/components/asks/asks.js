@@ -14,7 +14,7 @@ function generateAccordion() {
               </div>
             </div>
             <div id="bootstrap-accordion_6" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
-   </div>
+            </div>
         </div>
       </div>
     </div>
@@ -22,5 +22,5 @@ function generateAccordion() {
 }
 
 // Использование:
-document.getElementById("asks").innerHTML = generateAccordion();
+document.getElementById("list01-1r").innerHTML = generateAccordion();
 document.getElementById("bootstrap-accordion_6").innerHTML = Array.from(faqItems).reduce((buf, item, index, arr)=>buf+=Card(index,item), "")

@@ -2,7 +2,6 @@ function Form(params) {
     return ` <div class="container">
         <div class="mbr-section-head mb-5">
             <h2 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Оставьте заявку и мы с радостью ответим на все вопросы</strong></h2>
-            
         </div>
         <div class="row justify-content-center mt-4">
             <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">

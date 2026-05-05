@@ -1,6 +1,6 @@
 import directionsData from "./data.js";
 
-function Cards(directionsData, colorText="#ff7d19") {
+function Cards(directionsData,h2, desc, colorText="#ff7d19") {
   // Генерация карточек через reduce
   const cardsHtml = directionsData.reduce((acc, item) => {
     const activeClass = item.active ? " active" : "";
@@ -24,8 +24,8 @@ function Cards(directionsData, colorText="#ff7d19") {
       <div class="row justify-content-center">
         <div class="col-12 content-head">
           <div class="mbr-section-head mb-5">
-            <h2 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Направления&nbsp;</strong></h2>
-            <h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7">Наши курсы — это уникальные авторские программы, созданные с нуля действующими разработчиками. Мы совмещаем коммерческий опыт (от 2 лет) и преподавание (от 4 лет), чтобы давать только актуальные и проверенные на практике знания</h5>
+            <h2 style="color:${colorText}" class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>${h2}&nbsp;</strong></h2>
+            <h5 style="color:${colorText}" class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7">${desc}</h5>
           </div>
         </div>
       </div>
@@ -36,5 +36,5 @@ function Cards(directionsData, colorText="#ff7d19") {
   `;
 }
 
-document.getElementById("features04-w").innerHTML = Cards(directionsData);
+document.getElementById("features04-w").innerHTML = Cards(directionsData,"Направления","Наши курсы — это уникальные авторские программы, созданные с нуля действующими разработчиками. Мы совмещаем коммерческий опыт (от 2 лет) и преподавание (от 4 лет), чтобы давать только актуальные и проверенные на практике знания");
 export default Cards;
