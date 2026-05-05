@@ -36,6 +36,12 @@ const sections = [
     innerHTML: ""
   },
   {
+    id: "slider04-1v",
+    tag: "section",
+    attrs: 'class="features4 cid-tMlEXTHLbS"',
+    innerHTML: ""
+  },
+  {
     id: "asks", // обратите внимание: оригинал имеет два id, оставляем первый
     tag: "section",
     attrs: 'class="list1 cid-vhqvzcv02Z" id="list01-1r"', // сохраняем второй id как часть attrs

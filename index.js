@@ -13,4 +13,6 @@
   await import('./js/components/address/address.js');
   await import('./js/components/form/Form.js');
   await import('./js/components/footer/footer.js');
+    await import('./js/components/slider/slider.js');
+
 })();

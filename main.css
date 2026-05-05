@@ -13,6 +13,77 @@
         display: grid;
         grid-template-rows: 10% auto;
     }
+     .slider4 {
+      padding: 3rem 1rem;
+    }
+    .embla {
+      position: relative;
+      overflow: hidden;
+    }
+    .embla__viewport {
+      overflow: hidden;
+      width: 100%;
+    }
+    .embla__container {
+      display: flex;
+      transition: transform 0.3s ease;
+      gap: 1rem;
+    }
+    .embla__slide {
+      flex-shrink: 0;
+      width: 100%; /* по умолчанию 1 слайд */
+      box-sizing: border-box;
+    }
+    .embla__slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      display: block;
+    }
+    /* Кнопки навигации */
+    .embla__button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      border: none;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+      z-index: 10;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+    .embla__button:hover {
+      background: rgba(0,0,0,0.8);
+    }
+    .embla__button--prev {
+      left: 10px;
+    }
+    .embla__button--next {
+      right: 10px;
+    }
+    /* Адаптив: на планшетах и ПК показываем 3 слайда */
+    @media (min-width: 768px) {
+      .embla__slide {
+        width: calc((100% - 2rem) / 3); /* 3 слайда с учётом gap 1rem */
+      }
+    }
+    /* Заголовки по желанию */
+    .mbr-section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    .mbr-section-subtitle {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
     @media (max-width:768px){
       .gallery-image{
         justify-content: center;
@@ -34,3 +105,18 @@
     .mbr-item-subtitle_p{
         color:white
     }
+    .video-caption {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 0 0.5rem;
+}
+.embla__slide{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
