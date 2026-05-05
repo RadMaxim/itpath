@@ -4,3 +4,24 @@
     .footerA{
         color: white !important;
     }
+    .gallery-image{
+        margin-top: 10px;
+        display: grid;
+        grid-template-areas: "img" "content";
+        
+    }
+    .item-wrapper{
+        grid-area: "img";
+      
+
+    }
+    .item-wrapper img{
+        /* transform: scale(1.25); */
+        
+    }
+    @media (max-width:768px){
+      .gallery-image{
+        justify-content: center;
+        grid-template-columns: clamp(280px,50%, 600px) ;
+      }  
+    }
