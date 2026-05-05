@@ -5,23 +5,32 @@
         color: white !important;
     }
     .gallery-image{
-        margin-top: 10px;
         display: grid;
-        grid-template-areas: "img" "content";
-        
-    }
-    .item-wrapper{
-        grid-area: "img";
       
-
-    }
-    .item-wrapper img{
-        /* transform: scale(1.25); */
         
+    }
+    .card_teacher{
+        display: grid;
+        grid-template-rows: 10% auto;
     }
     @media (max-width:768px){
       .gallery-image{
         justify-content: center;
         grid-template-columns: clamp(280px,50%, 600px) ;
+
       }  
+    }
+    .card_teacher{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .mbr-item-subtitle{
+        font-weight: 700;
+        color:white;
+        line-height: 40px;
+    }
+    .mbr-item-subtitle_p{
+        color:white
     }
