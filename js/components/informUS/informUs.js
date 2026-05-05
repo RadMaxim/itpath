@@ -5,7 +5,7 @@ function informUs() {
         <div class="card-wrapper">
           <div class="row">
             <div class="col-12 col-md-12 col-lg-5 image-wrapper">
-              <img class="w-100" src="assets/images/telegram-707x773.png" alt="Mobirise Website Builder">
+              <img class="w-100" src="./telegram-707x773.png" alt="Mobirise Website Builder">
             </div>
             <div class="col-12 col-lg col-md-12">
               <div class="text-wrapper align-left">
