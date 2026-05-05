@@ -8,7 +8,7 @@ import './js/components/asks/asks.js';
 import './js/components/address/address.js';
 import './js/components/teacher/Teacher.js';
 import './js/components/form/Form.js';
-import './js/components/directions/Directions.js';
+import './js/components/directions/Cards.js';
 
 // Если какой-то из этих модулей экспортирует функцию инициализации,
 // её нужно вызвать здесь. Например:
