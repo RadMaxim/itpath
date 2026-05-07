@@ -1,7 +1,7 @@
 function Slider() {
   // Массив объектов: ID видео и текст описания
   const videos = [
-    { id: "MLVWbn8U6h0", description: "Аня рассказывает, как создала свою первую игру на Construct" },
+    { id: "https://youtu.be/G8MQ9GyqK40?si=BrtBZEoLI_pUcoBC", description: "Игра в жанре Tower Defence на Construct" },
     { id: "5qap5aO4i9A", description: "Максим делится опытом участия в хакатоне и победой" },
     { id: "6n3pFFPSlW4", description: "Соня объясняет, зачем ей робототехника и Arduino" },
     { id: "y0V4T5uR5lI", description: "Артём о том, как Python помог в школьных проектах" },
@@ -16,7 +16,7 @@ function Slider() {
       <div class="video-container" style="height:100%">
         <iframe 
             style="height:100%"
-          src="https://www.youtube.com/embed/${video.id}?rel=0&modestbranding=1" 
+          src="${video.id}" 
           title="YouTube video player" 
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
